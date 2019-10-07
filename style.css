@@ -51,61 +51,76 @@ header {
   /* background: #2d152c; */
   background-image: linear-gradient(#381B37, #2d152c);
   color: #fffff9;
-  border-bottom: 2px solid #876185;
+  border-bottom: 2px solid #B4B29B;
   padding: 2vh 0vw;
 }
 
 header #logo img {
-  width: 33vw;
+  width: 25vw;
   height: auto;
   border-radius: 20px;
   border: 2px solid #876185;
   margin-left: 5vw;
 }
 
-nav ul {
+nav {
   width: 50vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+nav ul {
+  width: 34vw;
   text-align: right;
   height: 100%;
   margin: 0;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  font-size: 17pt;
+  flex-flow: row;
+  align-self: center;
+  justify-content: space-between;
+  font-size: 14pt;
   list-style: none;
   padding-left: 0;
-  margin-right: 5vw;
+  font-size: 20pt;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
+  margin-bottom: 5px;
+}
+
+nav ul li {
+  right: 0;
 }
 
 .hover a:link {
   color: #fffff9;
-  border-right: 1vw solid #fffff9;
-  padding-right: 1vw;
+  border-top: 1vh solid #fffff9;
+  padding-top: 1vh;
   transition: all 0.5s;
 }
 
 .hover a:hover {
-  border-right: 10vw solid;
+  border-top: 4vh solid;
 }
 
 .red a:link {
-  border-right-color: #AB314D;
+  border-top-color: #AB314D;
 }
 
 .yellow a:link {
-  border-right-color: #F6AC42;
+  border-top-color: #F6AC42;
 }
 
 .green a:link {
-  border-right-color: #84B13D;
+  border-top-color: #84B13D;
 }
 
-nav ul #icons {
+nav #icons {
+  width: 30vw;
   display: flex;
   flex-flow: row;
-  align-items: flex-end;
+  align-self: center;
   justify-content: space-between;
   background: #543652;
   color: #fffff9;
@@ -115,14 +130,14 @@ nav ul #icons {
   border: 2px solid #6D4B6B;
 }
 
-nav ul #icons a:link {
+nav #icons a:link {
   color: #fffff9;
   padding: 1vh;
   border-radius: 10px;
   transition: background 0.5s;
 }
 
-nav ul #icons a:hover {
+nav #icons a:hover {
   color: #fffff9;
   background: #6DB89D;
 }
